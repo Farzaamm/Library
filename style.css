@@ -1,0 +1,143 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: rgb(32, 103, 209);
+    width: 100%;
+    padding: 3rem;
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 700;
+    font-style: italic;
+    box-shadow: 0px 3px 10px black;
+    z-index: 1;
+    position: relative;
+}
+
+.book-info {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    display: none;
+    z-index: 2;
+}
+
+form {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    height: 25rem;
+    position: relative;
+}
+
+.input-field {
+    width: 100%;
+    padding: .5rem;
+    border-radius: 10px;
+}
+
+input {
+    margin-bottom: .5rem;
+    border: none;
+    background-color: rgb(238, 238, 238);
+    font-size: 1.1rem;
+}
+
+form p {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    font-size: 2rem;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
+button {
+    padding: 1rem 2.5rem;
+    width: 50%;
+    max-width: 300px;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(66, 99, 229);
+    color: white;
+    cursor: pointer;
+    box-shadow: 0px 3px 10px black;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    padding-top: 1.5rem;
+    background-color: aqua;
+    min-height: 73vh;
+    z-index: 0;
+}
+
+section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(150px, auto);
+    gap: 1rem;
+    margin-top: 1rem;
+    padding: 1rem;
+
+}
+
+article {
+    background-color: rgb(158, 201, 232);
+    padding: .5rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 3px 10px rgb(87, 84, 84);
+}
+
+article h2 {
+    padding-bottom: 1rem;
+}
+
+article p {
+    padding-bottom: 1rem;
+}
+
+.remove-btn {
+    background-color: rgb(215, 20, 20);
+    color: white;
+    font-size: 1rem;
+    padding: .4rem;
+    cursor: pointer;
+}
+
+.remove-btn::after {
+    content: 'Remove';
+}
+
+#read-btn {
+    background-color: green;
+    font-size: 1rem;
+    padding: .4rem;
+    cursor: pointer;
+    min-width: 55%;
+    margin-bottom: 1rem;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    padding: 5px;
+    width: 100%;
+    text-align: center;
+    background-color: aqua;
+}
